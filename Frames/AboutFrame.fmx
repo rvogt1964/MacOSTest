@@ -1,0 +1,71 @@
+﻿object AboutFrame: TAboutFrame
+  Size.Width = 1100.000000000000000000
+  Size.Height = 680.000000000000000000
+  Size.PlatformDefault = False
+  TabOrder = 0
+  object ImageAbout: TImage
+    Align = Top
+    Size.Width = 1100.000000000000000000
+    Size.Height = 220.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Fit
+    HitTest = False
+  end
+  object LabelHeading: TLabel
+    Position.X = 36.000000000000000000
+    Position.Y = 236.0
+    Size.Width = 840.000000000000000000
+    Size.Height = 74.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'MacOSTest'
+    TextSettings.Font.Size = 42.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+  end
+  object LabelVersion: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 320.0
+    Size.Width = 900.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Version 1.2.1  |  Delphi 13.1 Professional (May Patch)'
+    TextSettings.Font.Size = 18.000000000000000000
+  end
+  object LabelDescription: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 386.0
+    Size.Width = 1000.000000000000000000
+    Size.Height = 76.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Plattformübergreifender Schraubenkatalog mit SQLite-Artikeldatenbank, Zylinder- und Senkkopfschrauben, Bildergalerie und technischen Metadaten.'
+    WordWrap = True
+    TextSettings.Font.Size = 18.000000000000000000
+  end
+  object LabelTechnology: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 489.0
+    Size.Width = 1000.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Technologie: FireMonkey (FMX) / TFrame / FireDAC / SQLite / JPEG-BLOBs'#13#10'Entwickler: R. Vogt'#13#10'Zielsysteme: macOS Intel & Apple Silicon, Windows, Android und iOS (abhängig von Lizenz und SDK)'
+    WordWrap = True
+    TextSettings.Font.Size = 17.000000000000000000
+  end
+  object LabelBundleID: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 618.0
+    Size.Width = 930.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'App-ID / CFBundleIdentifier: de.rvogt.macostest'
+    TextSettings.Font.Size = 16.000000000000000000
+  end
+  object LabelCopyright: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 694.0
+    Size.Width = 930.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    Text = '© 2026 R. Vogt  |  Demo-Produktdaten: keine geprüften Herstellerangaben'
+    TextSettings.Font.Size = 15.000000000000000000
+  end
+end

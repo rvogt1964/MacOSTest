@@ -1,0 +1,60 @@
+﻿object MainWindow: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MacOSTest – Schraubenkatalog'
+  ClientHeight = 760
+  ClientWidth = 1160
+  FormFactor.Width = 1160
+  FormFactor.Height = 760
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object TabControlMain: TTabControl
+    Align = Client
+    Size.Width = 1160.000000000000000000
+    Size.Height = 760.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    TabIndex = 0
+    OnChange = TabControlMainChange
+    object TabCatalog: TTabItem
+      Text = 'Schraubenkatalog'
+      Size.Width = 1160.000000000000000000
+      Size.Height = 730.000000000000000000
+      Size.PlatformDefault = False
+      inline FrameCatalog: TCatalogFrame
+        Align = Client
+        Size.Width = 1160.000000000000000000
+        Size.Height = 730.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+    object TabLog: TTabItem
+      Text = 'Log'
+      Size.Width = 1160.000000000000000000
+      Size.Height = 730.000000000000000000
+      Size.PlatformDefault = False
+      inline FrameLog: TLogFrame
+        Align = Client
+        Size.Width = 1160.000000000000000000
+        Size.Height = 730.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+    object TabAbout: TTabItem
+      Text = 'Über mich...'
+      Size.Width = 1160.000000000000000000
+      Size.Height = 730.000000000000000000
+      Size.PlatformDefault = False
+      inline FrameAbout: TAboutFrame
+        Align = Client
+        Size.Width = 1160.000000000000000000
+        Size.Height = 730.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+end

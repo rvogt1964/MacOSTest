@@ -1,0 +1,147 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MacOSTest '#8211' Schraubenkatalog'
+  ClientHeight = 760
+  ClientWidth = 1160
+  FormFactor.Width = 1160
+  FormFactor.Height = 760
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object TabControlMain: TTabControl
+    Align = Client
+    Size.Width = 1160.000000000000000000
+    Size.Height = 760.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = Top
+    OnChange = TabControlMainChange
+    Sizes = (
+      1160s
+      734s
+      1160s
+      734s
+      1160s
+      734s)
+    object TabCatalog: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 116.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Schraubenkatalog'
+      ExplicitSize.cx = 1160.000000000000000000
+      ExplicitSize.cy = 730.000000000000000000
+      inline FrameCatalog: TCatalogFrame
+        Align = Client
+        Size.Width = 1160.000000000000000000
+        Size.Height = 734.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        inherited LayoutToolbar: TLayout
+          Size.Width = 1160.000000000000000000
+        end
+        inherited LayoutBody: TLayout
+          Size.Width = 1160.000000000000000000
+          Size.Height = 668.000000000000000000
+          inherited ListArticles: TListBox
+            Size.Height = 668.000000000000000000
+            Viewport.Width = 511.000000000000000000
+            Viewport.Height = 664.000000000000000000
+          end
+          inherited LayoutDetails: TLayout
+            Size.Width = 645.000000000000000000
+            Size.Height = 668.000000000000000000
+            inherited LabelTitle: TLabel
+              Size.Width = 621.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited ImageProduct: TImage
+              Size.Width = 621.000000000000000000
+            end
+            inherited MemoDetails: TMemo
+              Size.Width = 621.000000000000000000
+              Size.Height = 392.000000000000000000
+              Viewport.Width = 617.000000000000000000
+              Viewport.Height = 388.000000000000000000
+            end
+            inherited LabelCount: TLabel
+              Position.Y = 636.000000000000000000
+              Size.Width = 633.000000000000000000
+            end
+          end
+        end
+      end
+    end
+    object TabLog: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 40.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Log'
+      ExplicitSize.cx = 1160.000000000000000000
+      ExplicitSize.cy = 730.000000000000000000
+      inline FrameLog: TLogFrame
+        Align = Client
+        Size.Width = 1160.000000000000000000
+        Size.Height = 734.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        inherited LayoutActions: TLayout
+          Size.Width = 1160.000000000000000000
+          inherited LabelInfo: TLabel
+            Size.Width = 1160.000000000000000000
+          end
+        end
+        inherited MemoLog: TMemo
+          Size.Width = 1160.000000000000000000
+          Size.Height = 662.000000000000000000
+          Viewport.Width = 1160.000000000000000000
+          Viewport.Height = 662.000000000000000000
+        end
+        inherited TimerLog: TTimer
+          Left = 600
+        end
+      end
+    end
+    object TabAbout: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 83.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #220'ber mich...'
+      ExplicitSize.cx = 1160.000000000000000000
+      ExplicitSize.cy = 730.000000000000000000
+      inline FrameAbout: TAboutFrame
+        Align = Client
+        Size.Width = 1160.000000000000000000
+        Size.Height = 734.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        inherited ImageAbout: TImage
+          Size.Width = 1160.000000000000000000
+        end
+        inherited LabelHeading: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+end
